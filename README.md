@@ -1,7 +1,7 @@
 # ATR-1834-10
 
    ## Simple Equb system:
-       **The  Project has**
+        __The  Project has__
             ->Home page
             ->About
             ->Payment
