@@ -1,8 +1,17 @@
 # ATR-1834-10
 
-   ## Simple Equb system
-        The  Project has:
-            ->Home page
-            ->About
-            ->Payment
-            -> registration page
+## Simple Equb system
+
+---
+
+&nbsp; This  Project has:
+
+&nbsp; &nbsp;  ->Home page
+
+&nbsp; &nbsp;  ->About
+
+&nbsp;&nbsp;   ->Payment
+
+&nbsp; &nbsp;  -> registration page
+
+---
