@@ -6,12 +6,12 @@
 
 &nbsp; This  Project has:
 
-&nbsp; &nbsp;  ->Home page
+*&nbsp; &nbsp;  -> Home page
 
-&nbsp; &nbsp;  ->About
+*&nbsp; &nbsp;  -> About
 
-&nbsp;&nbsp;   ->Payment
+*&nbsp;&nbsp;   -> Payment
 
-&nbsp; &nbsp;  -> registration page
+*&nbsp; &nbsp;  -> registration page
 
 ---
