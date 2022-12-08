@@ -1,17 +1,17 @@
-# ATR-1834-10
+<h1 align="center"> ATR-1834-10<h1>
 
-## Simple Equb system
+<h3>Simple Equb system</h3>
 
 ---
 
 &nbsp; This  Project has:
 
-*&nbsp; &nbsp;  -> Home page
+&nbsp; &nbsp;  -> Home page
 
-*&nbsp; &nbsp;  -> About
+&nbsp; &nbsp;  -> About
 
-*&nbsp;&nbsp;   -> Payment
+&nbsp;&nbsp;   -> Payment
 
-*&nbsp; &nbsp;  -> registration page
+&nbsp; &nbsp;  -> registration page
 
 ---
