@@ -1,0 +1,16 @@
+.outer_div{
+   margin: 0%;
+   background-color: aliceblue;
+   position: relative;
+}
+.header_div{
+    position: absolute;
+    top: 0px;
+    background-color: aliceblue;
+    display: flex;
+    
+
+}
+.header_div h3{
+    justify-content: space-evenly;
+}
