@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/Contacts.css">
+
+    <script type="text/javascript" src="../js/contacts.js"></script>
+
     <title>Profile Page</title>
 </head>
 <body>
@@ -34,29 +37,30 @@
 
       <div class="main_div">
         <div class="comment_div">
+          <form onsubmit="return commentFormValidator()" name="comment" action="Profile_Page.html"  method="post" >
           <div class="comment_input">
              
-              <p>Comment box</p>
-              <form action="">
+              <p id="comment_req">Comment box</p>
+              
         
-                <input type="text" id="comment" name="comment" placeholder="write Your comment here"> </form>
+                <input type="text" id="comment" name="comment_con" placeholder="write Your comment here"> 
             
           </div>
           
             <div class="username_div">
              
-              <p>UserName <a href="">*</a></p>
+              <p id="username_req">UserName <a href="">*</a></p>
               <form action="">
         
                 <input type="text" id="username" name="username" placeholder="UserName"> </form>
             
             </div>
             <div class="submit_div">
-              <a href="Login.html"><button> Submit</button></a> 
+              <input type="submit" value="Submit">
              </div> 
         </div>
 
-
+      </form>
         <div class="vetical_line"> <hr></div>
 
         <div class="div_right">

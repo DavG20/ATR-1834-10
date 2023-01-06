@@ -151,7 +151,7 @@ li
 }
 
 
-.submit_div button{
+.submit_div input{
     position: relative;
     top: 40px;
     width: 100%;
