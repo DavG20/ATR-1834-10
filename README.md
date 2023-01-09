@@ -15,3 +15,7 @@
 &nbsp; &nbsp;  -> registration page
 
 ---
+
+<h3>Some change may be done because of page publishing <br>
+during puplishing some change happend
+</h2>
