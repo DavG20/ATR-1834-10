@@ -1,0 +1,238 @@
+body{
+    margin: 0;
+}
+
+.div_nav{
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+    width: 100%;
+    
+}
+div ul{
+
+  background-color: #3F424A;
+ margin: 0;
+ padding: 0;
+  overflow: hidden;
+  width: 100%;
+  /* height: 20px; */
+
+}
+ul li{
+    float: left;
+    /* background-color: 3F424A; */
+    display: block;
+    
+   
+
+}
+li a{
+    display: block;
+    padding: 14px 30px;
+    margin: 0;
+    color: white;
+
+    height: fit-content;
+    text-decoration: none;
+    font-weight: bold;
+    opacity: 90%;
+    font-size: 24px;
+}
+li a:hover{
+    background-color: rgb(15, 14, 14);
+    
+}
+li a:active{
+    background-color:  FB6549;
+}
+li a :visited{
+    background-color:  FB6549;
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+    padding: 6px;
+    border-radius: 30px;
+    margin: 0;
+    
+}
+ .profile{
+    width: 40px;
+    height: 40px;
+    /* padding : 6px; */
+    margin-right: 10px;
+    margin-top: 5px;
+    
+} 
+
+li
+.signup{
+    margin-top: 0px;
+    padding: 0%;
+    margin-bottom:0;
+    margin-left: 4px;
+    color: white;
+    /* font-weight: bold; */
+    font-size: 12px;
+}
+
+.title{
+    width: 100%;
+    position: relative;
+    top: 30px;
+    background-color: black;
+    
+}
+.title h3{
+    position: absolute;
+    top: 20px;
+    left: 45%;
+    text-align: center;
+    display: flex;
+    color: rgb(240, 7, 46);
+}
+
+.title_line{
+    width: 90%;
+    position: absolute;
+    top: 50px;
+    left: 5%;
+    
+}
+
+.equb_list{
+    display: flex;
+    position: relative;
+    top: 150px;
+    /* left: 5%;
+    right: 5%; */
+    
+    
+    
+}
+.equb_list div h3{
+    margin-top: 2%;
+    margin-bottom: 0;
+    padding-top: 0px;
+    padding-left: 2%;
+    font-weight: bold;
+    text-decoration: underline;
+    color: rgb(228, 67, 38);
+    text-align: start;
+
+}
+.equb_list div p{
+    
+    font-size: 16px;
+    color:rgb(203, 62, 37) ;
+    font-weight: 500;
+    padding-left: 2%;
+    margin-bottom: 0;
+
+
+}
+.equb_list div a{
+    font-size: 20px;
+    text-decoration: none;
+    color: blue;
+    margin-left: 90%;
+    margin-top: 0%;
+}
+.right_equb_list{
+    display: flex;
+    flex-direction: column;
+    position: absolute;  
+    left: 5%;
+    width: 40%;
+    
+    
+    
+}
+
+.right_equb_list div{
+    margin-bottom: 4%;
+    height: 90px;
+    box-shadow: 2px 2px rgb(93, 86, 86);
+    background-color: #eff1f4;
+}
+
+
+.left_equb_list{
+    display: flex ;
+    flex-direction: column;
+    position: absolute;
+    left: 55%; 
+    width: 40%;
+    
+
+}
+
+.left_equb_list div{
+    margin-bottom: 4%;
+    height: 90px;
+    box-shadow: 2px 2px rgb(93, 86, 86);
+    background-color: #eff1f4;
+}
+
+
+
+.join{
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+}
+
+
+
+
+
+
+
+.footer {
+    position: relative;
+    top: 700px;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 30px; */
+    background-color:#3F424A;
+    width: 100%;
+    height: 80px;
+    margin: 0;
+  }
+  .social__media {
+    display: flex;
+    position: absolute;
+    left: 60%;
+    align-items: center;
+    padding: 0 40px;
+    width: 30%;
+    padding-top: 10px;
+    color: white;
+  }
+  .contact__us {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    padding-top: 0px;
+    padding-left: 50px;
+    /* border: solid; */
+   
+  }
+  .contact__us h4 a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding-left: 5px;
+  }
+  .contact__us h4 img{
+    margin: 0px;
+    width: 30px;
+    padding-left: 20px;
+  }
+  .social__media img {
+    width: 30px;
+    padding-left: 20px;
+  
+  }
