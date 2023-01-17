@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/login.css">
+    <script type="text/javascript" src="../js/login.js"></script>
     <title>Login Page</title>
 </head>
 <body>
@@ -26,28 +27,29 @@
            </li>
        </ul>
        </div>
-       <div class="title_reg"><h2>Register and Save your money</h2></div>
+       
        <div class="login_div">
          <h3>Login</h3>
+         <form method="post" name="login" action="Profile_Page.html" onsubmit="return validateForm()">
          <div class="username_div">
            
-           <p>UserName <a href="">*</a></p>
-           <form action="">
+           <p id="username_req">UserName <a href="">*</a></p>
+           
      
-             <input type="text" id="username" name="username" placeholder="UserName"> </form>
+             <input type="text" id="username" name="username" placeholder="UserName"> 
          
          </div>
          
          <div class="password_div">
-           <p>Password <a href="">*</a></p>
-           <form action="">
-             <input type="password" id="password" name="password" placeholder="Password"> </form>
+           <p id="password_req">Password <a href="">*</a></p>
+           
+             <input type="password" id="password" name="password" placeholder="Password"> 
          </div>
      
          <div class="submit_div">
-          <a href="Profile_Page.html"><button> Login</button></a> 
+          <a href="Profile_Page.html"><input type="submit" value="Login"> </a> 
          </div> 
-     
+        </form>
         <h5>You don't have an account ? Register <a href="Registration.html">Here</a></h5>
        </div>
        <div class="footer">

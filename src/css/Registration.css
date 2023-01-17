@@ -205,11 +205,12 @@ li a :visited{
     position: absolute;
     top: 340px;
     left: 5%;
-    width: 82%;
+    width: 33.3%;
+   
     
 }
-.submit_div button{
-    width: 100%;
+.submit_div input{
+    position: absolute;
     height: 40px;
     background-color: #3F424A;
     padding-left: 5px;

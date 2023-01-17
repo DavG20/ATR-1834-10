@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../css/payment.css">
+
+    <script type="text/javascript" src="../js/payment.js"></script>
+
     <title>Payment</title>
 </head>
 <body>
@@ -32,48 +35,49 @@
        <div class="title_reg"><h2>Pay and Win the next turn</h2></div>
        <div class="registration_div">
          <h3>Payment</h3>
+         <form action="Profile_Page.html" onsubmit="return paymentValidator()" method="post" name="payment">
          <div class="username_div">
            
-           <p>UserName <a href="">*</a></p>
-           <form action="">
+           <p id="username_req">UserName <a href="">*</a></p>
+           
      
-             <input type="text" id="username" name="username" placeholder="UserName"> </form>
+             <input type="text" id="username" name="username" placeholder="UserName"> 
          
          </div>
          <div class="equb_id">
-           <p>EQUB ID <a href="">*</a></p>
-           <form action="">
+           <p id="equb_req">EQUB ID <a href="">*</a></p>
      
-             <input type="text" id="id" name="equbid" placeholder="EQUB ID"> </form>
+             <input type="text" id="id" name="equbid" placeholder="EQUB ID"> 
          </div>
          
          <div class="email_div">
-           <p>Email <a href="">*</a></p>
-           <form action="">
+           <p id="email_req">Email <a href="">*</a></p>
+           
      
-             <input type="text" id="Email" name="email" placeholder="Email"> </form>
+             <input type="text" id="Email" name="email" placeholder="Email"> 
          </div>    
          <div class="birth_div">
-           <p>Date of Birth <a href="">*</a></p>
-           <form action="">
-             <input type="text" id="birth" name="birth" placeholder="DD | MM | YYYY"> </form>
+           <p id="birth_req">Date of Birth <a href="">*</a></p>
+           
+             <input type="text" id="birth" name="birth" placeholder="DD | MM | YYYY"> 
          </div>
          
          <div class="gender_div">
-           <p>Gender <a href="">*</a></p>
-           <form action="">
-             <input type="text" id="gender" name="gender" placeholder="Male | Female "> </form>
+           <p id="gender_req">Gender <a href="">*</a></p>
+           
+             <input type="text" id="gender" name="gender" placeholder="Male | Female "> 
          </div>
          
          <div class="amount_div">
-           <p>Amount <a href="">*</a></p>
-           <form action="">
-             <input type="amount" id="amount" name="amount" placeholder="Amount in Birr "> </form>
+           <p id="amoun_req">Amount <a href="">*</a></p>
+          
+             <input type="amount" id="amount" name="amount" placeholder="Amount in Birr "> 
          </div>
      
          <div class="submit_div">
-          <a href="Login.html"><button> Pay</button></a> 
+          <input type="submit" value="Pay" name="payment"> 
          </div> 
+        </form>
      
         <h5>You alredy have an account ? Login <a href="Login.html">Here  </a>  &nbsp;  &nbsp; &nbsp;&nbsp;  You don't have an account ? Register <a href="Registration.html">Here</a></h5>
        </div>
