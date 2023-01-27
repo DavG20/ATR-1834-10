@@ -1,155 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/Registration.css">
-        <title>Registration</title>
-    </head>
-    <script type="text/javascript" src="../js/regitration.js"></script>
-    <body>
-        <div class="outer_div">
-            <div class="div_nav">
-                <ul>
-                    <li><img class="logo" src="../images/EQUB.png" alt="Equb
-                            logo"></li>
-                    <li>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous">
+    <title>Registration</title>
+  </head>
+  <script type="text/javascript" src="../js/regitration.js"></script>
+  <body>
+    <div class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <img src="../images/EQUB.png" alt="equb logo" class="rounded-circle"
+          width="40" height="40">
 
-                        <a href="../../index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="About.html">About</a>
-                    </li>
-                    <li><a href="Payment.html">Payment</a></li>
-                    <li><a href="Contacts.html">Contacts</a></li>
-                    <li style="float: right; "><img class="profile"
-                            src="../images/pro.png" alt="profile">
-                        <a class="signup" href="Login.html">SignIn</a>
+        <button class="navbar-toggler" type="button"
+          data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page"
+                href="../../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="About.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Payment.html">Payment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Contacts.html">Contacts</a>
+            </li>
 
-                    </li>
-                </ul>
-            </div>
-            <div class="title_reg"><h2>Register and Save your money</h2></div>
-            <div class="registration_div">
-                <h3>Register</h3>
+          </ul>
+        </div>
+        <div class="container-fluid">
+          <div class="d-grid float-end"> <img src="../images/pro.png"
+              alt="profile"
+              class="rounded-circle" width="40px" height="40px">
+            <a href="Login.html" class="text-white-50" style="text-decoration:
+              none;">SignIn</a></div>
+        </div>
+      </div>
+    </div>
+    <section class="h-100 gradient-custom ">
+      <div class="container py-5 h-100">
+        <div class="row justify-content-center align-items-center h-100">
+          <div class="col-12 col-lg-9 col-xl-7">
+            <div class="card shadow-2-strong card-registration"
+              style="border-radius: 15px;">
+              <div class="card-body p-4 p-md-5">
+                <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
+                <form action="Profile_Page.html" class="needs-validation">
 
-                <form onsubmit="return validateForm()" name="register" method="post" action="Profile_Page.html">
-                    <div class="username_div">
+                  <div class="row">
 
-                        <p id="user_name_req">UserName <a href="">*</a></p>
+                    <div class="col-md-6 mb-4">
 
-                            <input type="text" id="username" name="username"
-                                placeholder="UserName">
+                      <div class="form-outline">
+                        <label class="form-label" for="UserName">UserName</label>
+                        <input type="text" id="UserName" class="form-control
+                          form-control-lg" required />
 
-                        </div>
-                        <div class="fullname">
-                            <p id="fullname_rew">FullName <a href="">*</a></p>
+                      </div>
 
-
-                            <input type="text" id="name" name="fullname"
-                                placeholder="FullName">
-
-                        </div>
-
-                        <div class="email_div">
-                            <p id="email_req">Email <a href="">*</a></p>
-
-
-                            <input type="text" id="Email" name="email"
-                                placeholder="Email">
-
-                        </div>
-                        <div class="password_div">
-                            <p id="password_req">Password <a href="">*</a></p>
-
-                            <input type="password" id="password" name="password"
-                                placeholder="Password">
-                        </div>
-
-                        <div class="birth_div">
-                            <p id="birthday_req">Date of Birth <a href="">*</a></p>
-                            <input type="text" id="birth" name="birth"
-                                placeholder="DD | MM | YYYY">
-                        </div>
-
-
-                        <div class="gender_div">
-                            <p id="gender_req">Gender <a href="">*</a></p>
-                            <input type="text" id="gender" name="gender"
-                                placeholder="Male | Female ">
-                        </div>
-
-                        <div class="location_div">
-                            <p id="location_req">Location <a href="">*</a></p>
-
-                            <input type="location" id="location" name="location"
-                                placeholder="Current Location">
-                        </div>
-
-                        <div class="submit_div">
-                            
-                             <a href="Profile_Page.html"><input type="submit" value="Register"  ></a>
-                             
-                        </div>
-                    </form>
-
-                    <h5>You already have an account ? Login <a
-                            href="Login.html">Here</a></h5>
-                </div>
-                <div class="footer">
-                    <div class="contact__us">
-                        <h4>
-                            <img
-                                class="icon"
-                                src="https://icongr.am/fontawesome/envelope-o.svg?size=128&color=currentColor"
-                                alt=""
-                                />
-                            <a href="EqubInfo@gmail.com">EqubInfo@gmail.com</a>
-                        </h4>
-
-                        <h4>
-                            <img
-                                class="icon"
-                                src="https://icongr.am/fontawesome/phone.svg?size=128&color=currentColor"
-                                alt=""
-                                />
-                            <a href=""> +251937474745</a>
-
-                        </h4>
                     </div>
 
-                    <div class="social__media">
-                        <div class="fb__link">
-                            <h4> <a href="#"><img
-                                        src="https://icongr.am/devicon/facebook-plain.svg?size=128&color=currentColor"
-                                        alt="facebook logo"
-                                        /></a>
 
-                                <a href="#"><img
-                                        src="https://icongr.am/devicon/linkedin-plain.svg?size=128&color=currentColor"
-                                        alt="linkedin logo"
-                                        /></a>
-                            </h4>
-                        </div>
+                    <div class="col-md-6 mb-4">
 
-                        <div class="insta__twit">
-                            <h4>
-                                <a href="#"><img
-                                        src="https://icongr.am/fontawesome/instagram.svg?size=128&color=currentColor"
-                                        alt="instagram logo"
-                                        /></a>
+                      <div class="form-outline">
+                        <label class="form-label" for="FullName">FullName</label>
+                        <input type="text" id="FullName" class="form-control
+                          form-control-lg" required/>
 
-                                <a href="#"><img
-                                        src="https://icongr.am/devicon/twitter-original.svg?size=128&color=currentColor"
-                                        alt="twitter logo"
-                                        /></a>
-                            </h4>
-                        </div>
+                      </div>
+
                     </div>
-                </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 mb-4 pb-2 w-100">
+
+                      <div class="form-outline">
+                        <label class="form-label" for="emailAddress">Email</label>
+                        <input type="email" id="emailAddress"
+                          class="form-control form-control-lg" required />
+                      </div>
+
+                    </div>
+                  </div>
+
+
+                  <div class="row">
+                    <div class="col-md-6 mb-4 pb-2 w-100">
+
+                      <div class="form-outline">
+                        <label class="form-label " for="password">Password</label>
+                        <input type="password" id="password"
+                          class="form-control form-control-lg" required/>
+
+                      </div>
+
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-6 mb-4 d-flex align-items-center">
+                        <div class="form-outline datepicker w-100">
+                          <label for="birthdayDate" class="form-label">Birthday</label>
+                          <input type="text" class="form-control
+                            form-control-lg" id="birthdayDate" required />
+                        </div>
+
+                      </div>
+                      <div class="col-md-6 mb-4">
+
+                        <h6 class="mb-2 pb-1">Gender: </h6>
+
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio"
+                            name="inlineRadioOptions" id="femaleGender"
+                            value="option1" checked />
+                          <label class="form-check-label" for="femaleGender">Female</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio"
+                            name="inlineRadioOptions" id="maleGender"
+                            value="option2" />
+                          <label class="form-check-label" for="maleGender">Male</label>
+                        </div>
+
+
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-6 mb-4 pb-2 w-100">
+
+                      <div class="form-outline">
+                        <label class="form-label" for="location">Location</label>
+                        <input type="tel" id="location" class="form-control
+                          form-control-lg" required/>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="mt-4 pt-2 w-100">
+                    <input class="btn btn-primary btn-lg w-100" type="submit"
+                      value="Register" />
+                  </div>
+                </form>
+
+                <h5 class="m-4">You already have an account ? Login <a
+                    style="text-decoration: none;"
+                    href="Login.html">Here</a></h5>
+
+              </div>
 
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        </body>
-    </html>
+    <footer class="text-center text-sm-start mt-5 position-relative "
+      style="background-color: #23201f;">
+      <div class="container d-flex py-2 ">
+
+        <div class="row ">
+          <h4 class="text-white-50">
+            <img
+              class="img-fluid"
+              src="https://icongr.am/fontawesome/envelope-o.svg?size=60&color=currentColor"
+              alt=""
+              />
+            EqubInfo@gmail.com
+          </h4>
+          <h4 class="text-white-50">
+            <img
+              class="icon"
+              src="https://icongr.am/fontawesome/phone.svg?size=60&color=currentColor"
+              alt=""
+              />
+            +251937474745
+
+          </h4>
+        </div>
+        <img
+          src="https://icongr.am/devicon/linkedin-plain.svg?size=60&color=currentColor"
+          alt="linkedin logo"/>
+        <img
+          src="https://icongr.am/devicon/twitter-original.svg?size=60&color=currentColor"
+          alt="twitter logo"/>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center text-white p-3" style="background-color: rgba(0,
+        0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white" href="../../index.html">Equb.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
