@@ -14,4 +14,11 @@
 
 &nbsp; &nbsp;  -> registration page
 
+&nbsp; &nbsp;  -> Login page
+
+&nbsp; &nbsp;  -> Profile page
+
+&nbsp; &nbsp;  -> Contacts page
+
+
 ---
