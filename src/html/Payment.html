@@ -18,9 +18,10 @@
   <body>
 
 
-    <div class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+    <div class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark
+      justify-content-evenly ">
       <div class="container-fluid">
-        <img src="../images/EQUB.png" alt="equb logo" class="rounded-circle"
+        <img src="../images/EQUB.png" alt="equb logo" class="rounded-circle "
           width="40" height="40">
 
         <button class="navbar-toggler" type="button"
@@ -52,73 +53,141 @@
               alt="profile"
               class="rounded-circle" width="40px" height="40px">
             <a href="Login.html" class="text-white-50" style="text-decoration:
-              none;">SignIn</a></div>
+              none;">Joe Doe</a></div>
         </div>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-5 p-5 align-content-center">
+      <div class="row">
+        <h2 class="text-danger text-center text-decoration-underline">Pay and
+          Win the next turn</h2>
+      </div>
+    </div>
+
+
+    <section class=" gradient-custom ">
+      <div class="container py-2 mb-2 ">
+        <div class="row justify-content-center align-items-center ">
+          <div class="col-12 col-lg-9 col-xl-7">
+            <div class="card shadow-2-strong card-registration"
+              style="border-radius: 15px;">
+              <div class="card-body p-4 p-md-5">
+                <h3 class="mb-5 text-center">Payment Form</h3>
+                <form action="Profile_Page.html" class="needs-validation">
+
+                  <div class="row">
+
+                    <div class="col-md-6 mb-4">
+
+                      <div class="form-outline">
+                        <label class="form-label" for="UserName">UserName</label>
+                        <input type="text" id="UserName" class="form-control
+                          form-control-lg" required />
+
+                      </div>
+
+                    </div>
+
+
+                    <div class="col-md-6 mb-4">
+
+                      <div class="form-outline">
+                        <label class="form-label" for="equb's_id">Equb's Id</label>
+                        <input type="text" id="equb's_id" class="form-control
+                          form-control-lg" required/>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 mb-4 pb-2 w-100">
+
+                      <div class="form-outline">
+                        <label class="form-label" for="emailAddress">Email</label>
+                        <input type="email" id="emailAddress"
+                          class="form-control form-control-lg" required />
+                      </div>
+
+                    </div>
+                  </div>
+
+
+                  <div class="row">
+
+
+                    <div class="row">
+                      <div class="col-md-6 mb-4 d-flex align-items-center">
+                        <div class="form-outline datepicker w-100">
+                          <label for="birthdayDate" class="form-label">Birthday</label>
+                          <input type="text" class="form-control
+                            form-control-lg" id="birthdayDate" required />
+                        </div>
+
+                      </div>
+                      <div class="col-md-6 mb-4">
+
+                        <h6 class="mb-2 pb-1">Gender: </h6>
+
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio"
+                            name="inlineRadioOptions" id="femaleGender"
+                            value="option1" checked />
+                          <label class="form-check-label" for="femaleGender">Female</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio"
+                            name="inlineRadioOptions" id="maleGender"
+                            value="option2" />
+                          <label class="form-check-label" for="maleGender">Male</label>
+                        </div>
+
+
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-6 mb-4 pb-2 w-100">
+
+                      <div class="form-outline">
+                        <label class="form-label" for="amount">Amount</label>
+                        <input type="tel" id="amount" class="form-control
+                          form-control-lg" required/>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="mt-4 pt-2 w-100">
+                    <input class="btn btn-primary btn-lg w-100" type="submit"
+                      value="Pay" />
+                  </div>
+                </form>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="container-fluid mt-5 p-5 align-content-center">
+      <div class="row">
+        <h5 class="text-center">You alredy have an account ? Login <a
+            href="Login.html" class="text-decoration-none">Here </a>
+          &nbsp; &nbsp; &nbsp;&nbsp; You don't have an account ? Register <a
+            href="Registration.html" class="text-decoration-none">Here</a></h5>
       </div>
     </div>
 
 
 
-
-    
-
-
-    <div class="title_reg"><h2>Pay and Win the next turn</h2></div>
-    <div class="registration_div">
-      <h3>Payment</h3>
-      <form action="Profile_Page.html" onsubmit="return paymentValidator()"
-        method="post" name="payment">
-        <div class="username_div">
-
-          <p id="username_req">UserName <a href="">*</a></p>
-
-
-          <input type="text" id="username" name="username"
-            placeholder="UserName">
-
-        </div>
-        <div class="equb_id">
-          <p id="equb_req">EQUB ID <a href="">*</a></p>
-
-          <input type="text" id="id" name="equbid" placeholder="EQUB ID">
-        </div>
-
-        <div class="email_div">
-          <p id="email_req">Email <a href="">*</a></p>
-
-
-          <input type="text" id="Email" name="email" placeholder="Email">
-        </div>
-        <div class="birth_div">
-          <p id="birth_req">Date of Birth <a href="">*</a></p>
-
-          <input type="text" id="birth" name="birth" placeholder="DD | MM |
-            YYYY">
-        </div>
-
-        <div class="gender_div">
-          <p id="gender_req">Gender <a href="">*</a></p>
-
-          <input type="text" id="gender" name="gender" placeholder="Male |
-            Female ">
-        </div>
-
-        <div class="amount_div">
-          <p id="amoun_req">Amount <a href="">*</a></p>
-
-          <input type="amount" id="amount" name="amount" placeholder="Amount
-            in Birr ">
-        </div>
-
-        <div class="submit_div">
-          <input type="submit" value="Pay" name="payment">
-        </div>
-      </form>
-
-      <h5>You alredy have an account ? Login <a href="Login.html">Here </a>
-        &nbsp; &nbsp; &nbsp;&nbsp; You don't have an account ? Register <a
-          href="Registration.html">Here</a></h5>
-    </div>
 
 
     <footer class="text-center text-sm-start mt-5 position-relative "
